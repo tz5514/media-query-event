@@ -1,0 +1,31 @@
+body {
+  color: white;
+}
+
+/* xs */
+@media screen and (max-width: 767px) {
+  body {
+    background-color: #F44336;
+  }
+}
+
+/* sm */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-color: #FFA726;
+  }
+}
+
+/* md */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    background-color: #4CAF50;
+  }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: #039BE5;
+  }
+}

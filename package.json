@@ -1,0 +1,18 @@
+{
+  "name": "media-query-event",
+  "version": "1.0.0",
+  "description": "detect CSS media query changing event and run the callback function.",
+  "main": "main.js",
+  "keywords": [
+    "media-query",
+    "mediaquery",
+    "media-query-event"
+  ],
+  "homepage": "https://github.com/tz5514/media-query-event#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tz5514/media-query-event.git"
+  },
+  "author": "An (tz5514)",
+  "license": "MIT"
+}
