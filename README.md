@@ -9,7 +9,8 @@ npm install media-query-event --save
 
 ## Usage
 ```
-function.bind(range, callback, callbackWhenPageInit);
+var mediaQueryEvent = require('media-query-event');
+mediaQueryEvent.bind(range, callback, callbackWhenPageInit);
 ```
 ### range
 |  | Type | Example Value | Description |

@@ -130,9 +130,6 @@
 	            args[1]();
 	          }
 	        }
-	      } else if (typeof args[0] === 'function') {
-	        //如果不指定input的話 直接callback並傳入當前query
-	        args[0]();
 	      }
 	      queryLast = event.animationName;
 	    }, false);

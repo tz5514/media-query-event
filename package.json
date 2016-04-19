@@ -1,12 +1,14 @@
 {
   "name": "media-query-event",
   "version": "1.0.0",
-  "description": "detect CSS media query changing event and run the callback function.",
+  "description": "Detect CSS media query changing event and run the callback function.",
   "main": "main.js",
   "keywords": [
     "media-query",
     "mediaquery",
-    "media-query-event"
+    "media-query-event",
+    "rwd",
+    "responsive"
   ],
   "homepage": "https://github.com/tz5514/media-query-event#readme",
   "repository": {
