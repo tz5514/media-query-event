@@ -31,34 +31,34 @@ var settingRange = function(){
 
   @keyframes xs {
     from {
-      clip: rect(1px, auto, auto, auto);
+      opacity:1;
     }
     to {
-      clip: rect(0px, auto, auto, auto);
+      opacity:1.01;
     }
   }
   @keyframes sm {
     from {
-      clip: rect(1px, auto, auto, auto);
+      opacity:1;
     }
     to {
-      clip: rect(0px, auto, auto, auto);
+      opacity:1.01;
     }
   }
   @keyframes md {
     from {
-      clip: rect(1px, auto, auto, auto);
+      opacity:1;
     }
     to {
-      clip: rect(0px, auto, auto, auto);
+      opacity:1.01;
     }
   }
   @keyframes lg {
     from {
-      clip: rect(1px, auto, auto, auto);
+      opacity:1;
     }
     to {
-      clip: rect(0px, auto, auto, auto);
+      opacity:1.01;
     }
   }
   `;
@@ -72,8 +72,7 @@ module.exports = {
     var queryLast;
 
     var args = arguments;
-
-    document.addEventListener('animationend', function(event) {
+    document.body.addEventListener('animationend', function(event) {
       //排除不相關的動畫
       if (event.animationName != 'xs' && event.animationName != 'sm' && event.animationName != 'md' && event.animationName != 'lg') {
         return;

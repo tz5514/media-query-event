@@ -2,7 +2,7 @@ var mediaQueryEvent = require('./../index.js');
 
 mediaQueryEvent.bind(['xs', 'sm'], function() {
   document.body.innerHTML = 'Mobile';
-});
+}, true);
 
 
 mediaQueryEvent.bind(['md', 'lg'], function() {

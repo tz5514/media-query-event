@@ -7,7 +7,7 @@ var settingRange = function settingRange() {
   }
   var style = document.createElement('style');
   style.id = 'tz5514-media-query-event-setting';
-  style.innerHTML = 'body {\n    animation-duration: 0.001s;\n  }\n  @media screen and (max-width: 767px) {\n    body {\n      animation-name: xs;\n    }\n  }\n  @media screen and (min-width: 768px) and (max-width: 991px) {\n    body {\n      animation-name: sm;\n    }\n  }\n  @media screen and (min-width: 992px) and (max-width: 1199px) {\n    body {\n      animation-name: md;\n    }\n  }\n  @media screen and (min-width: 1200px) {\n    body {\n      animation-name: lg;\n    }\n  }\n\n  @keyframes xs {\n    from {\n      clip: rect(1px, auto, auto, auto);\n    }\n    to {\n      clip: rect(0px, auto, auto, auto);\n    }\n  }\n  @keyframes sm {\n    from {\n      clip: rect(1px, auto, auto, auto);\n    }\n    to {\n      clip: rect(0px, auto, auto, auto);\n    }\n  }\n  @keyframes md {\n    from {\n      clip: rect(1px, auto, auto, auto);\n    }\n    to {\n      clip: rect(0px, auto, auto, auto);\n    }\n  }\n  @keyframes lg {\n    from {\n      clip: rect(1px, auto, auto, auto);\n    }\n    to {\n      clip: rect(0px, auto, auto, auto);\n    }\n  }\n  ';
+  style.innerHTML = 'body {\n    animation-duration: 0.001s;\n  }\n  @media screen and (max-width: 767px) {\n    body {\n      animation-name: xs;\n    }\n  }\n  @media screen and (min-width: 768px) and (max-width: 991px) {\n    body {\n      animation-name: sm;\n    }\n  }\n  @media screen and (min-width: 992px) and (max-width: 1199px) {\n    body {\n      animation-name: md;\n    }\n  }\n  @media screen and (min-width: 1200px) {\n    body {\n      animation-name: lg;\n    }\n  }\n\n  @keyframes xs {\n    from {\n      opacity:1;\n    }\n    to {\n      opacity:1.01;\n    }\n  }\n  @keyframes sm {\n    from {\n      opacity:1;\n    }\n    to {\n      opacity:1.01;\n    }\n  }\n  @keyframes md {\n    from {\n      opacity:1;\n    }\n    to {\n      opacity:1.01;\n    }\n  }\n  @keyframes lg {\n    from {\n      opacity:1;\n    }\n    to {\n      opacity:1.01;\n    }\n  }\n  ';
   document.head.appendChild(style);
 };
 
@@ -18,8 +18,7 @@ module.exports = {
     var queryLast;
 
     var args = arguments;
-
-    document.addEventListener('animationend', function (event) {
+    document.body.addEventListener('animationend', function (event) {
       //排除不相關的動畫
       if (event.animationName != 'xs' && event.animationName != 'sm' && event.animationName != 'md' && event.animationName != 'lg') {
         return;
