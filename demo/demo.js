@@ -1,4 +1,4 @@
-var mediaQueryEvent = require('./../main.js');
+var mediaQueryEvent = require('./../index.js');
 
 mediaQueryEvent.bind(['xs', 'sm'], function() {
   document.body.innerHTML = 'Mobile';

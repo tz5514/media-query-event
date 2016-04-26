@@ -1,7 +1,7 @@
 var settingRange = function(){
   var oldStyle = document.getElementById('tz5514-media-query-event-setting');
   if (oldStyle){
-    oldStyle.remove();
+    oldStyle.parentNode.removeChild(oldStyle);
   }
   var style = document.createElement('style');
   style.id = 'tz5514-media-query-event-setting';

@@ -1,6 +1,6 @@
 {
   "name": "media-query-event",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Detect CSS media query changing event and run the callback function.",
   "main": "build.js",
   "scripts": {
